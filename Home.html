@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        body {
+            background: radial-gradient(to right, rgb(230, 145, 145), rgb(245,rgba(192, 128, 229, 0.752), 245), rgb(95, 55, 225));
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, rgb(245, 223, 223), rgb(13, 13, 14), rgb(247, 60, 213));
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .menu {
+            font-size: 25px;
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu a {
+            display: inline-block;
+            color: #b3d8f5;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #e7a06d;
+        }
+
+        @media (max-width: auto) {
+            .navbar {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar .menu a {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .take-action-button {
+            display: block;
+            background: linear-gradient(to right, rgb(179, 110, 179), rgb(247, 182, 182), rgb(172, 172, 255), rgb(172, 229, 172));
+            color: rgb(97, 37, 109);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .content {
+            background-image: linear-gradient( rgb(180, 22, 233),rgb(55, 12, 56), rgb(180, 22, 233));
+            padding: 350px;
+        }
+
+        .space {
+            background-color: #b3d8f5;
+        }
+
+        .content2 {
+            background-color: antiquewhite;
+        }
+
+        .content3 {
+            margin-right: 20px;
+            color: rgb(11, 10, 10);
+            padding: 50px;
+            text-align: center;
+        }
+
+        .container {
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #e2aff0;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 60px;
+            color: rgba(234, 221, 234, 0.947);
+        }
+
+        .second {
+            text-align: center;
+            padding: 50px;
+            font-size: 40px;
+            background: linear-gradient(to left, purple, rgb(97, 76, 235))
+        }
+
+        footer {
+            background: linear-gradient(to left, rgb(50, 50, 50), rgb(245, 223, 223), rgb(247, 60, 213));
+            color: #fff;
+            margin: auto;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="https://www.murphinetech.live">
+            <img src="C:\Users\Murphine\Desktop\DSAP Project\Assets\image\MurphineTech Logo.png" width="60" height="60"
+                alt="Logo" />
+        </a>
+        <div class="menu">
+            <a href="About.html">About</a>
+            <a href="Service.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact us.html">Contact</a>
+            <button style="background-color: #ee47c4; font-size: 20px;"><a href="Registration for Mtech.html"
+                    class="take-action-button" style="color: purple;">Registration</a></button>
+        </div>
+    </div>
+    <!-- Add your content here -->
+    <div class="content">
+        <div class="container" style="color: rgb(247, 204, 247);">
+            <p style="font-size: 30px;"><i>Let's make your imaginations a reality with <text
+                        style="color: #dbed6a;">MurphineTech!</i></p>
+            <h1><i style="color: rgb(225, 219, 225);">EXPLORING THE <text style="color: #eeebee;">REALM OF TECH</i></h1>
+
+            <div style="display: flex; justify-content: center;">
+                <a href="About.html"
+                    style=" text-align: center; width: 150px; height: 40px; align-items: center; font-size: 30px;color: purple;"
+                    class="take-action-button">Get Started!</a>
+            </div>
+        </div>
+    </div>
+    <div class="second">
+        "Embrace the challenge of solving complex problems. It's where innovation thrives."
+
+        - A wise saying
+    </div>
+
+    <div style="display: flex; justify-content: center; ">
+        <h1 style="color: rgb(161, 89, 173);">Upcoming Events</h1>
+    </div>
+
+    <div style="padding: 50px; display: flex; justify-content: center;">
+        <div class="space" style="color: black; margin-right: 20px; text-align: center; padding: 50px;">
+            <div class="development">
+                <h3 style="font-size: 25px;">Web Development Bootcamp Training(Quaterly)</h3>
+                <img src="Assets/image/1.jpg" alt="" width="400px" height="400px"><br><br>
+                <p style="font-size: 20px;"><i><b>Our beginners training course covers the basics in:</b><br>
+                        <ul>- HTML<br></ul>
+                        <ul>- CSS<br></ul>
+                        <ul>- Java Script<br></ul>
+                        <ul>- Wordpress<br></ul>
+                        <ul>- Bootstrap
+                    </i></ul>
+                </p>
+            </div>
+        </div>
+        <div class="content2" style="margin-right: 20px; color: rgb(11, 10, 10); padding: 50px; text-align: center;">
+            <h3 style="font-size: 25px;">Content Creation Training (Quaterly)</h3>
+            <img src="Assets/image/12.jpg" alt="" width="400px" height="400px"><br><br>
+            <p style="font-size: 20px;"><i><b>Our course will cover the basics in the following fields:</b><br>
+                    <ul>- Content writing<br> </ul>
+                    <ul>- Graphic design(Canva)<br> </ul>
+                    <ul>- AI Optimization<br></ul>
+                    <ul>- Social Media Management<br> </ul>
+                    <ul>- Search Engine Optimization
+                </i></ul>
+            </p>
+        </div>
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <button class="circle"
+            style="background: linear-gradient(to right, rgb(179, 110, 179), rgb(247, 182, 182), rgb(172, 172, 255), rgb(172, 229, 172)); width: 200px; height: 80px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+            <a href="Registration for Mtech.html"
+                style="text-align: center; width: 300px; height: 40px; align-items: center; font-size: 30px; text-decoration: none; color: inherit; display: flex; justify-content: center; align-items: center;">Register
+                Now!</a>
+        </button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div style="padding: 40px; background: linear-gradient(to left, rgb(67, 53, 220), rgb(212, 200, 200), rgb(192, 40, 203));" class="aside">
+    </div>
+    <div>
+        <div style="padding: 50px; display: flex; justify-content: center;background: linear-gradient(to left, rgb(50, 50, 50), rgb(155, 151, 151));">
+            <div class="space" style="color: rgb(242, 230, 230); margin-right: 20px; text-align: center;">
+                <div class="development">
+
+                    <img src="Assets/image/e3.jpg" width="600px" height="600px"><br><br>
+
+                </div>
+            </div>
+            <div class="content3">
+                <h3 style="font-size: 35px;color: aliceblue;">EXPLORE THE TECH REALM</h3>
+
+                <p style="font-size: 20px; line-height: 60px;text-align: justify;color: antiquewhite;"><i>Tech world is a rapidly evolving
+                        industry that is <br> responsible for driving innovation and shaping the future.<br> With
+                        breakthroughs in technology happening every day, there is no<br> limit to what we can achieve.
+                        <br> From cutting-edge gadgets to revolutionary software, the <br> possibilities are endless in
+                        the exciting world of technology.</i><br>
+
+                </p>
+            </div>
+        </div>
+      
+        <br>
+        <br>
+        
+        <div style="display: flex; justify-content: center;">
+            <button class="circle"
+                style="background: linear-gradient(to right, rgb(179, 110, 179), rgb(247, 182, 182), rgb(172, 172, 255), rgb(172, 229, 172)); width: 200px; height: 80px; border-radius: 50%; border: none; display: flex; align-items: center; justify-content: center; font-size: 20px;">
+                <a href="https://www.murphinetech.live"
+                    style="text-align: center; width: 300px; height: 40px; align-items: center; font-size: 30px; text-decoration: none; color: inherit; display: flex; justify-content: center; align-items: center;">Explore more!
+                </a>
+            </button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <br>
+        <br>
+       
+
+
+        <footer>
+            <p style="color: aliceblue;"> Murphine Technologies &copy; <a href="https://www.murphinetech.live"
+                    target="_blank">www.murphinetech.live</a> @2024</p>
+            <div style="font-size: larger; flex-flow: row; color: aliceblue;">
+                <a href="https://www.facebook.com/murphine22"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/murphine22"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/murphine22"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/ejimofor-elisha-888935138"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Murphine22/Murphine.git"><i class="fab fa-github"></i></a>
+            </div>
+            <p style="color: aliceblue;"><a href="Privacy.html">Privacy Policy</a> | <a
+                    href="Terms and Conditions.html">Terms and Conditions</a>
+            </p>
+        </footer>
+        <!-- Font Awesome CDN -->
+
+</body>
+
+</html>

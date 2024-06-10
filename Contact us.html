@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <style>
+        body {
+            
+        }
+
+        .navbar {
+            background: linear-gradient(to right, rgb(245, 223, 223), rgb(13, 13, 14), rgb(247, 60, 213));
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo {
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .navbar .menu {
+            font-size: 25px;
+            display: flex;
+            list-style-type: none;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar .menu a {
+            display: inline-block;
+            color: #b3d8f5;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+            border-bottom: 1px solid #444;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .menu a:hover {
+            background-color: #e7a06d;
+        }
+
+        @media (max-width: auto) {
+            .navbar {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 0;
+            }
+
+            .navbar .menu {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .navbar .menu a {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .take-action-button {
+            display: block;
+            background: linear-gradient(to right, rgb(179, 110, 179), rgb(247, 182, 182), rgb(172, 172, 255), rgb(172, 229, 172));
+            color: rgb(247, 243, 248);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .main {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgb(180, 22, 233), rgb(55, 12, 56), rgb(180, 22, 233));
+            margin: auto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 100vh;
+        }
+
+        .container {
+            background-image: linear-gradient(rgb(225, 172, 243), rgb(249, 174, 147), rgb(166, 173, 251));
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #e3bcef;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .input-group textarea {
+            height: 100px;
+        }
+
+      .btn {
+        background: linear-gradient(
+          to right,
+          rgb(50, 207, 73),
+          rgb(91, 19, 104)
+        );
+        color: rgb(255, 255, 255);
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .btn:hover {
+        background-color: #80d885;
+      }
+
+        footer {
+            background: linear-gradient(to left, rgb(50, 50, 50), rgb(245, 223, 223), rgb(247, 60, 213));
+            color: #fff;
+            margin: auto;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="Home.html">
+            <img src="Assets/image/MurphineTech Logo.png" width="60" height="60" alt="Logo" />
+
+        </a>
+        <div class="menu">
+            <a href="About.html">About</a>
+            <a href="Service.html">Services</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact us.html">Contact</a>
+            <button style="background-color: #d18ff1; font-size: 20px;"><a href="Registration for Mtech.html"
+                    class="take-action-button" style="color: purple;">Take Action</a></button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+                <div class="input-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                <div class="input-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone No.:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: +234-500-000-0000</small>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p style="color: aliceblue;"> Murphine Technologies &copy; <a href="https://www.murphinetech.live"
+                target="_blank">www.murphinetech.live</a> @2024</p>
+        <div style="font-size: larger; flex-flow: row; color: aliceblue;">
+            <a href="https://www.facebook.com/murphine22"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.twitter.com/murphine22"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/murphine22"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ejimofor-elisha-888935138"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Murphine22/Murphine.git"><i class="fab fa-github"></i></a>
+        </div>
+        <p style="color: aliceblue;"><a href="Privacy.html">Privacy Policy</a> | <a
+                href="Terms and Conditions.html">Terms
+                and Conditions</a>
+        </p>
+    </footer>
+    <!-- Font Awesome CDN -->
+
+</body>
+
+</html>

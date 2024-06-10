@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <style>
+      
+      .faq {
+        margin-bottom: 20px;
+        background-color: #e99999;
+        padding: 10px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      .faq:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      .question {
+        font-weight: bold;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #ddd;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+      }
+      .question:hover {
+        background-color: #ccc;
+      }
+      .answer {
+        display: none;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 3px;
+        animation: fadeIn 0.5s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav" background-color="purple">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html"><img
+                    src="C:\Users\Murphine\Desktop\Group D Template\assets\favicon.jpg" width="60" height="60"
+                    alt="Logo" /></a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button></div></nav>
+           
+      
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer1')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        What is the program about?
+      </div>
+      <div class="answer" id="answer1" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: The Dunamis Skill Acquisition Program is a training program designed to equip participants with various skills and knowledge to enhance their employability and entrepreneurial capabilities.
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer2')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        What are the qualifications for participating in the program?
+      </div>
+      <div class="answer" id="answer2" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: The program is open to individuals who are interested in acquiring new skills and knowledge, regardless of their educational background or prior experience.
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer3')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        What are the requirements for registration?
+      </div>
+      <div class="answer" id="answer3" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: To register for the program, you need to fill out an online application form and provide the necessary documentation, such as Dunamis Membership certificate, and Dunamis HomeCell details.
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer4')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        What skills are offered in the program?
+      </div>
+      <div class="answer" id="answer4" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: The program offers a variety of skills, including but not limited to, Catering, Fashion design, Interior Decoration, Hair Styling, ICT(Web & Graphics Design), Shoe making, Soap production, Solar Energy, Photography and Editing, Paint production.
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer5')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        What's the duration of the program?
+      </div>
+      <div class="answer" id="answer5" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: The duration of the program varies depending on the specific skill or course, but typically from a four weeks.
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer6')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        When does the next session commence?
+      </div>
+      <div class="answer" id="answer6" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: The next session of the Dunamis Skill Acquisition Program is scheduled to commence sometime in September 2024
+      </div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer7')" style="font-size: x-large; text-align: center; width: 40%; margin: 0 auto;">
+        Are the skills Certified?
+      </div>
+      <div class="answer" id="answer7" style="font-size: large; text-align: center; width: 40%; margin: 0 auto; display: none;">
+        Answer: Yes, upon successful completion of the program, participants will receive a recognized certification for the skills they have acquired. and the best are empowered financially or tool/equipments to be used in the field.
+      </div>
+    </div>
+
+    
+    <script>
+      function toggleAnswer(answerId) {
+        var answer = document.getElementById(answerId);
+        if (answer.style.display === "none") {
+          answer.style.display = "block";
+        } else {
+          answer.style.display = "none";
+        }
+      }
+      
+    </script>
+  </body>
+</html>
+
+    </script>
+  </body>
+</html>

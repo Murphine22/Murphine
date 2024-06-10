@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: linear-gradient(rgb(180, 22, 233), rgb(55, 12, 56), rgb(180, 22, 233));
+      margin: 0;
+      padding: 20px;
+    }
+
+    .navbar {
+      background: linear-gradient(to right, rgb(245, 223, 223), rgb(13, 13, 14), rgb(247, 60, 213));
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar .menu {
+      font-size: 25px;
+      display: flex;
+      list-style-type: none;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar .menu a {
+      display: inline-block;
+      color: #b3d8f5;
+      text-decoration: none;
+      padding: 10px 20px;
+      text-align: center;
+      border-bottom: 1px solid #444;
+      transition: background-color 0.3s;
+    }
+
+    .navbar .menu a:hover {
+      background-color: #e7a06d;
+    }
+
+    @media (max-width: auto) {
+      .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0;
+      }
+
+      .navbar .menu {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .navbar .menu a {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .take-action-button {
+      display: block;
+      background: linear-gradient(to right, rgb(179, 110, 179), rgb(247, 182, 182), rgb(172, 172, 255), rgb(172, 229, 172));
+      color: rgb(97, 37, 109);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .content {
+      background-image: url(Assets/image/internet.jpg);
+      padding: 350px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .gallery-item {
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .gallery-item img {
+      width: 200px;
+      height: 190px;
+      display: block;
+    }
+
+    .gallery-item .description {
+      padding: 5px;
+      background-color: #6f706a;
+    }
+
+    .video-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .video-item {
+      margin: 10px;
+      max-width: 300px;
+    }
+
+    .video-item video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .video-item p {
+      text-align: center;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      background: linear-gradient(to left, rgb(50, 50, 50), rgb(245, 223, 223), rgb(247, 60, 213));
+      color: #fff;
+      margin: auto;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: larger;
+    }
+  </style>
+</head>
+
+<body style="background-image: url('C:\Users\Murphine\Desktop\DSAP Project\Assets\image\background.jpg');">
+  <div class="navbar">
+    <a class="logo" href="Home.html">
+      <img src="Assets/image/MurphineTech Logo.png" width="60" height="60" alt="Logo" />
+
+    </a>
+    <div class="menu">
+      <a href="About.html">About</a>
+      <a href="Service.html">Services</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="Contact us.html">Contact</a>
+      <button style="background-color: #d18ff1; font-size: 20px;"><a href="Registration for Mtech.html"
+              class="take-action-button" style="color: purple;">Take Action</a></button>
+  </div>
+  </div>
+  <!-- Add your content here -->
+  <br>
+  <div class="Image-gallery" style="background-color: rgb(194, 158, 248);"><br>
+    <h2>Picture Gallery</h2><br>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Assets/image/10.jpg" alt="Image 1">
+        <div class="description">
+          <p>Web Development</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/e6.jpg" alt="Image 2">
+        <div class="description">
+          <p>Programming Language</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/e4.jpg" alt="Image 2">
+        <div class="description">
+          <p>Ai Optimization</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/e5.jpg" alt="Image 2">
+        <div class="description">
+          <p> Global Innovations</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/9.jpg" alt="Image 2" width="200px" height="180px">
+        <div class="description">
+          <p>Search Engine Optinmization</p>
+        </div>
+      </div>
+      <!-- Add more gallery items as needed -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="Assets/image/useful.jpg" alt="Image 1">
+        <div class="description">
+          <p>Cyber Security</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/cd.jpg" alt="Image 2">
+        <div class="description">
+          <p>Back-End Developers</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/2.jpg" alt="Image 2">
+        <div class="description">
+          <p>Graphics Design</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/hk.jpg" alt="Image 2">
+        <div class="description">
+          <p> Global Innovations</p>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="Assets/image/beautify.jpg" alt="Image 2" width="200px" height="180px">
+        <div class="description">
+          <p>Search Engine Optinmization</p>
+        </div>
+      </div>
+    </div>
+    <div
+      style="padding: 40px; background: linear-gradient(to left, rgb(67, 53, 220), rgb(212, 200, 200), rgb(192, 40, 203));"
+      class="aside"><h2 style="text-align: center;"> Video-Gallery</h2>
+    </div>
+    <!-- Add more gallery items as needed -->
+  </div>
+  <div class="video-gallery" style="position: relative; background-color: antiquewhite;">
+    
+    <div class="video-item">
+      <video controls>
+        <source src="Assets/videos/Tech.mkv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Programing languages</p>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="Assets/videos/Tech2.mkv.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Trackering devices</p>
+    </div>
+    <div class="video-gallery">
+      <div class="video-item">
+        <video controls>
+          <source src="Assets/videos/Tech3.mkv.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Data Analysis</p>
+      </div>
+      <div class="video-item">
+        <video controls>
+          <source src="Assets/videos/Tech4.mkv.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Robotics</p>
+      </div>
+      <div class="video-gallery">
+        <div class="video-item">
+          <video controls>
+            <source src="Assets/videos/Tech5.mkv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Connecting the dots through Networking</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="Assets/videos/Tech6.mkv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Quantum leap</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="Assets/videos/Tech7.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Digitat Currencies</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="Assets/videos/tech8.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <p>Artificial Intelligence</p>
+        </div>
+      </div>
+      <!-- Add more video items as needed -->
+    </div>
+  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+      <p style="color: aliceblue;"> Murphine Technologies &copy; <a href="https://www.murphinetech.live"
+          target="_blank">www.murphinetech.live</a> @2024</p>
+      <div style="font-size: larger; flex-flow: row; color: aliceblue;">
+        <a href="https://www.facebook.com/murphine22"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com/murphine22"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/murphine22"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ejimofor-elisha-888935138"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Murphine22/Murphine.git"><i class="fab fa-github"></i></a>
+      </div>
+      <p style="color: aliceblue;"><a href="Privacy.html">Privacy Policy</a> | <a href="Terms and Conditions.html">Terms
+          and Conditions</a>
+      </p>
+    </footer>
+    <!-- Font Awesome CDN -->
+
+</body>
+
+</html>
